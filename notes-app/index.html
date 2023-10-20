@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Notes App</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Notes App</h1>
+        <h2 class="header__subtitle">Take notes and never forget</h2>
+      </div>
+    </header>
+
+    <div class="actions">
+      <div class="actions__container">
+        <input id="search-text" class="input" type="text" name="search" value="" placeholder="Filter notes">
+        <select id="filter-by" class="dropdown" name="">
+          <option value="byEdited">Sort by last edited</option>
+          <option value="byCreated">Sort by recently created</option>
+          <option value="alphabetical">sort alphabetically</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="notes"></div>
+      <button class="button" type="button" name="button" id="create-note">Create Note</button>
+    </div>
+    
+    
+    <!-- <p class="note">This application was created by Rasyid</p>
+    <p class="note">Some note text</p>
+    <p class="note">Third note text</p>
+    <p class="note">Fourth note text</p> -->
+    <!-- button dibawah adalah untuk tombol hapus -->
+    <!-- <button type="button" name="remove" id="remove-all">Remove All Notes</button> -->
+    
+    <!-- <form id="name-form">
+      <input type="text" name="firstName" placeholder="First name">
+      <button type="submit">Submit</button>
+    </form> -->
+    <!-- <label for="">
+      <input id="for-fun" type="checkbox" name="" value="">Check me for fun
+    </label> -->
+
+    <!-- ini UUIDV4 berfungsi membuat unik id -->
+    <script src="scripts/uuidv4.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="scripts/notes-functions.js"></script>
+    <script src="scripts/notes-app.js"></script>
+  </body>
+</html>
